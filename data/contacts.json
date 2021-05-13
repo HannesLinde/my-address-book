@@ -18,8 +18,8 @@
     },
     {
       "id": "2",
-      "firstName": "Anastasia",
-      "lastName": "Andreeva",
+      "firstName": "Lukas",
+      "lastName": "Dendtel",
       "dateOfBirth": "2000-01-31T18:00:00.000Z",
       "hobbies": [
         "coding",
@@ -27,15 +27,15 @@
         "going to pubs",
         "contemplating on post-soviet socialisation"
       ],
-      "street": "Karl-Heine_Straße 35",
-      "postalCode": "04229",
+      "street": "Georg-Schwarz-Straße 11",
+      "postalCode": "04177",
       "city": "Leipzig",
-      "phone": "0176123456789"
+      "phone": "01577889668789"
     },
     {
       "id": "3",
-      "firstName": "Anastasia",
-      "lastName": "Andreeva",
+      "firstName": "Jessica",
+      "lastName": "Gardner",
       "dateOfBirth": "2000-01-31T18:00:00.000Z",
       "hobbies": [
         "coding",
@@ -43,10 +43,42 @@
         "going to pubs",
         "contemplating on post-soviet socialisation"
       ],
-      "street": "Karl-Heine_Straße 35",
+      "street": "Karl-Heine_Straße 41",
       "postalCode": "04229",
       "city": "Leipzig",
-      "phone": "0176123456789"
+      "phone": "01761234509889"
+    },
+    {
+      "id": "4",
+      "firstName": "Maria Belén",
+      "lastName": "Gatti",
+      "dateOfBirth": "2000-01-31T18:00:00.000Z",
+      "hobbies": [
+        "coding",
+        "building white boards",
+        "going to pubs",
+        "contemplating on post-soviet socialisation"
+      ],
+      "street": "Floßplatz 6",
+      "postalCode": "04109",
+      "city": "Leipzig",
+      "phone": "016065235707"
+    },
+    {
+      "id": "5",
+      "firstName": "Altynai",
+      "lastName": "Weber",
+      "dateOfBirth": "2000-01-31T18:00:00.000Z",
+      "hobbies": [
+        "coding",
+        "building white boards",
+        "going to pubs",
+        "contemplating on post-soviet socialisation"
+      ],
+      "street": "Am Zoo 17",
+      "postalCode": "04105",
+      "city": "Leipzig",
+      "phone": "01747874509889"
     }
   ]
 }
