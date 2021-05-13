@@ -1,39 +1,40 @@
 <template>
   <div>
-    <h2 class="text-xl">List</h2>
-    <ListOverview :contacts="contacts" :selectedContact="selectedContact" />
-
-    <div class="max-w-screen-sm h-100 mx-auto">
-      <div class="relative">
-        <div
-          class="absolute right-0 bottom-0 p-2 cursor-pointer bg-gray-400 rounded-br-xl rounded-tl-xl"
-          @click="next"
-        >
-          <i class="fas fa-arrow-right"></i>
+    <div class="max-w-screen-sm h-100 mx-auto relative">
+      <ListOverview
+        v-if="showList"
+        :contacts="contacts"
+        :selectedContact="selectedContact"
+      />
+      <div
+        class="absolute right-0 bottom-0 p-2 cursor-pointer bg-gray-400 rounded-br-xl rounded-tl-xl"
+        @click="next"
+      >
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div
+        class="absolute right-0 top-0 p-2 cursor-pointer bg-gray-800 text-white rounded-bl-xl rounded-tr-xl"
+        @click="showList = !showList"
+      >
+        <i class="far fa-list-alt"></i>
+      </div>
+      <div
+        class="absolute left-0 top-0 p-2 cursor-pointer bg-gray-400 rounded-br-xl rounded-tl-xl"
+        @click="previous"
+      >
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div
+        class="absolute left-0 bottom-0 p-2 cursor-pointer bg-gray-800 text-white rounded-tr-xl rounded-bl-xl"
+      >
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="grid grid-cols-2">
+        <div>
+          <LeftPage :avatarLink="avatarLink" :contact="singleContact" />
         </div>
-        <div
-          class="absolute right-0 top-0 p-2 cursor-pointer bg-gray-800 text-white rounded-bl-xl rounded-tr-xl"
-        >
-          <i class="far fa-list-alt"></i>
-        </div>
-        <div
-          class="absolute left-0 top-0 p-2 cursor-pointer bg-gray-400 rounded-br-xl rounded-tl-xl"
-          @click="previous"
-        >
-          <i class="fas fa-arrow-left"></i>
-        </div>
-        <div
-          class="absolute left-0 bottom-0 p-2 cursor-pointer bg-gray-800 text-white rounded-tr-xl rounded-bl-xl"
-        >
-          <i class="fas fa-plus"></i>
-        </div>
-        <div class="grid grid-cols-2">
-          <div>
-            <LeftPage :avatarLink="avatarLink" :contact="singleContact" />
-          </div>
-          <div>
-            <RightPage :contact="singleContact" />
-          </div>
+        <div>
+          <RightPage :contact="singleContact" />
         </div>
       </div>
     </div>
@@ -58,6 +59,7 @@ export default Vue.extend({
   },
   computed: {
     avatarLink() {
+      if (!this.singleContact) return "";
       return `https://avatars.dicebear.com/api/female/${this.singleContact.firstName}.svg`;
     },
     singleContact() {

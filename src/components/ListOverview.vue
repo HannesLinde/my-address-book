@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="max-w-screen-sm h-100 mx-auto">
     <div
       class="bg-blue-300 p-2 border-b border-black"
       v-for="(contact, index) in contacts"
