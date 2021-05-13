@@ -36,7 +36,7 @@ import Vue from "vue";
 export default Vue.extend({
   props: {
     contact: {
-      type: Object,
+      type: [Object, String],
     },
   },
 });
