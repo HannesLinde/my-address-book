@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "firstName": "Anastasia",
+      "lastName": "Andreeva",
+      "dateOfBirth": "2000-01-31T18:00:00.000Z",
+      "hobbies": [
+        "coding",
+        "building white boards",
+        "going to pubs",
+        "contemplating on post-soviet socialisation"
+      ],
+      "street": "Karl-Heine_Straße 35",
+      "postalCode": "04229",
+      "city": "Leipzig",
+      "phone": "0176123456789"
+    },
+    {
+      "id": "2",
+      "firstName": "Anastasia",
+      "lastName": "Andreeva",
+      "dateOfBirth": "2000-01-31T18:00:00.000Z",
+      "hobbies": [
+        "coding",
+        "building white boards",
+        "going to pubs",
+        "contemplating on post-soviet socialisation"
+      ],
+      "street": "Karl-Heine_Straße 35",
+      "postalCode": "04229",
+      "city": "Leipzig",
+      "phone": "0176123456789"
+    },
+    {
+      "id": "3",
+      "firstName": "Anastasia",
+      "lastName": "Andreeva",
+      "dateOfBirth": "2000-01-31T18:00:00.000Z",
+      "hobbies": [
+        "coding",
+        "building white boards",
+        "going to pubs",
+        "contemplating on post-soviet socialisation"
+      ],
+      "street": "Karl-Heine_Straße 35",
+      "postalCode": "04229",
+      "city": "Leipzig",
+      "phone": "0176123456789"
+    }
+  ]
+}
